@@ -5,6 +5,12 @@
 <title>login</title>
 <link rel="stylesheet" type="text/css" href="../css/base.css">
 </head>
+<style>
+.list-login li{ margin-top:20px;}
+    .list-login li .w86{ height:50px; line-height:50px; text-align:center; background:#F9F9F9; border:1px solid #ddd; border-right:none;}
+    .list-login li .right{ margin-left:87px;}
+    .btn-login{ width: 100%; height:38px; line-height:38px; background:#FF7010; border-radius:3px;}
+</style>
 
 <body class="bg-ddd">
 	<!-- header start -->
@@ -13,6 +19,8 @@
         	<!-- logo start -->
             <a class="logo fc_o" href="用户中心-首页.html">
                 <img class="fl" src="../images/logo.png" alt="logo" />
+                <span class="fl size-60 color-CBC">·</span>
+                <span class="fl size-22 color-F60">用户登录</span>
             </a>
             <!-- logo end -->
             <!-- helper start -->
@@ -35,36 +43,33 @@
             	<img src="../images/bg-login2.fw.png" alt="login" />
             </div>
             <div class="fr">
-                <h2>财务人员登录</h2>
-            	<ul class="pr63 w352 mt30">
+                <h2 class="text-center size-26 pt10 pb10">财务人员登录</h2>
+            	<ul class="pr63 w352 list-login">
                 	<li>
-                    	<p class="f14">邮箱/手机号码/用户名</p>
                     	<div class="clearfix">
-                    		<div class="fl box-username"></div>
-                    		<input class="text_h35 w349 text_user fl" type="text" vlaue="kefuhui@qq.com" />
+                    		<div class="fl h50 size-18 w86">账&nbsp;&nbsp;号</div>
+                    		<div class="right">
+                                <input class="text_h35 h50 w" type="text" vlaue="kefuhui@qq.com" />      
+                            </div>
                     	</div>
                     </li>
-                    <li class="mt10">
-                    	<p class="f14">密码</p>
+                    <li>
                     	<div class="clearfix">
-                    		<div class="fl box-username box-password"></div>
-                    		<input class="text_h35 w349 mt2 text_password" type="password" vlaue="kefuhui@qq.com" />
+                    		<div class="fl h50 size-18 w86">密&nbsp;&nbsp;码</div>
+                    		<div class="right">
+                                <input class="text_h35 h50 w" type="password" vlaue="kefuhui@qq.com" />
+                            </div>
                     	</div>
                     </li>
-                    <li class="mt10">
-                    	<p class="f14">验证码</p>
+                    <li>
                        	<div class="clearfix">
-                        	<input class="text_h35 w106 mt2 fl pl5" type="text" />
-                        	<a class="fl" href="#"><img src="../images/verification.png" alt="验证码" title="验证码" /></a>
+                            <div class="fl h50 size-18 w86">验证码</div>
+                        	<input class="text_h35 h50 w106 fl pl5" type="text" />
+                        	<a class="fr" href="#"><img src="../images/bg-yanzhengma.fw.png" alt="验证码" title="验证码" /></a>
                         </div>                        
                     </li>
-                    <li class="mt20 vm">
-                    	<input type="checkbox" />
-                    	<span class="fm_s fc_a3">记住密码</span>
-                        <a class="fm_s fr fc_b" href="#">忘记密码？</a>
-                    </li>
-                    <li class="mt15 clearfix">
-                    	<input class="btn_h227 fl hover w" type="submit" value="用户登录" />
+                    <li class="clearfix">
+                    	<input class="btn_h227 fl hover w btn-login" type="submit" value="用户登录" />
                     </li>
                 </ul>
             </div>
