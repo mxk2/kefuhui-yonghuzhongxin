@@ -113,6 +113,7 @@ select { font-size: 100%; }
 a { text-decoration: none; cursor: pointer; }
 a:hover { text-decoration: underline; }
 .hide { overflow: hidden; zoom: 1; }
+.show { display: block !important; }
 
 /* 未访问的链接 */
 
@@ -144,10 +145,13 @@ a:hover { color: #D31145; }
 .f16 { font-size: 16px; }
 .f18 { font-size: 18px; }
 .f20 { font-size: 20px; }
-.size-18{ font-size:18px;}
-.size-22{ font-size:22px;}
-.size-26{ font-size:26px;}
-.size-60{ font-size:60px;}
+.size-14 { font-size: 14px; }
+.size-18 { font-size: 18px; }
+.size-20 { font-size: 20px; }
+.size-22 { font-size: 22px; }
+.size-24 { font-size: 24px; }
+.size-26 { font-size: 26px; }
+.size-60 { font-size: 60px; }
 .fb { font-weight: bold; }
 .fn { font-weight: normal; }
 .t2 { text-indent: 2em; }
@@ -164,10 +168,10 @@ a:hover { color: #D31145; }
 .fc_g { color: #1f930c !important; }
 .fc_a3 { color: #a3a3a3 !important; }
 .fc_93 { color: #939393 !important; }
-.color-CBC{ color:#CBCBCB;}
-.color-F60{ color:#F60;}
+.color-CBC { color: #CBCBCB; }
+.color-F60 { color: #F60; }
 .t_indent_0 { text-indent: 0px !important; }
-.text-center{ text-align:center;}
+.text-center { text-align: center; }
 
 /*background*/
 .bc_b { background: #008abd; }
@@ -198,21 +202,24 @@ a:hover { color: #D31145; }
 .d_i_b { display: inline-block; }
 
 /*width height*/
-.w { width: 100%!important; }
+.w { width: 100% !important; }
 .h { height: 100%; }
 .h23 { height: 23px; }
-.h50 { height: 50px!important; }
+.h50 { height: 50px !important; }
 .h105 { height: 105px; }
 .w75 { width: 75px !important; }
-.w86{ width:86px;}
+.w86 { width: 86px; }
 .w106 { width: 106px; }
 .w289 { width: 289px; }
 .w304 { width: 304px; }
 .w349 { width: 349px; }
 .w352 { width: 352px; }
+.w438 { width: 438px; }
+.w717 { width: 717px; }
 .w1190 { width: 1190px !important; }
 
 /*margin padding*/
+.m-auto { margin: auto; }
 .m0 { margin: 0 !important; }
 .mt2 { margin-top: 2px !important; }
 .mt5 { margin-top: 5px !important; }
@@ -379,7 +386,7 @@ em.correct { padding-left: 25px; color: #53af26 !important; background: url(../i
 .selected .i_user { background-position: 0px -335px; }
 
 /*nav end*/
-#main { width: 771px; border: 1px solid #dbdbc8; border-top: none; background: #f8f8f8; }
+#main { min-height:555px; float: none; overflow:hidden; display: block; margin-left: 227px; border: 1px solid #dbdbc8; border-top: none; background: #f8f8f8; }
 .main_con { width: 572px; min-height: 800px; border-right: 1px solid #dbdbc8; background: #fbfbfb; }
 #sidebar { float: right; width: 198px; background: #f8f8f8; }
 
@@ -451,3 +458,39 @@ em.correct { padding-left: 25px; color: #53af26 !important; background: url(../i
 .table02 .msg { font-size: 12px; font-family: "宋体"; color: #afafaf; }
 
 /*shade end*/
+
+/*login2 start*/
+.list-login li { margin-top: 20px; }
+.list-login li .w86 { height: 50px; line-height: 50px; text-align: center; background: #F9F9F9; border: 1px solid #ddd; border-right: none; }
+.list-login li .right { margin-left: 87px; }
+.btn-login { width: 100%; height: 38px; line-height: 38px; background: #FF7010; border-radius: 3px; }
+
+/*login2 end*/
+
+/*发布上架 start*/
+#address { padding: 1em 0; background: #fff; overflow: hidden; }
+#address * { font-size: 14px; color: #B7B7B7; font-family: "宋体"; }
+#address .current { color: #8B8B8B; }
+.h2-fwfl { font-size: 14px; font-weight: bold; padding: 0.5em 1em; font-family: "宋体"; background: #F0F0F0; }
+.list-fwfl { padding: 60px 40px; }
+.list-fwfl li { padding: 10px; }
+.list-fwfl li a { dispay: block; text-decoration: none; }
+.list-fwfl li a .head { width: 66px; height: 66px; line-height: 59px; text-indent: 15px; font-size: 30px; font-weight: bold; color: #fff; background: url(../images/circle-grey.fw.png) no-repeat; }
+.list-fwfl li a.selected .head { background: url(../images/circle-blue.fw.png) no-repeat; }
+.list-fwfl li a .bottom { font-size: 14px; font-family: "宋体"; color: #999; }
+.list-fwfl li a.selected .bottom { color: #000; }
+.btn-primary { display: inline-block; border: none; padding: 0 2em; font-size: 14px; font-family: "宋体"; color: #fff; height: 39px; line-height: 39px; background: #0097CF; }
+
+/*发布上架 end*/
+
+/*验证码*/
+.box-dingdan { padding: 1em; width: 717px; margin: 0 auto; background: #FFFFE0; border: 1px solid #F9DFB2; overflow: hidden; }
+.box-dingdan p { font-family: "宋体"; line-height: 2em; color: #848484; }
+.input-215 { width: 215px; height: 40px; }
+
+/*支付*/
+.list-pay li { padding: 1em 10em; border-bottom: 1px dashed #ddd; }
+.list-pay li input[type='radio'],
+.list-pay li img { display: inline-block; vertical-align: middle; }
+.list-pay2 li{ padding:1em 0; overflow:hidden;}
+.list-pay2 li div{ width:33%;}
